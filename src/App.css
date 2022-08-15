@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  background-color: rgb(16, 16, 16);
+}
+
+.nav-img {
+  width: 150px;
+  margin: 15px;
+}
+
+.navbar-nav > li{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navbar > svg {
+  cursor: pointer;
+  color: white;
+}
+
+.navbar > svg:hover{
+  color: rgb(216, 216, 216);
+}
+
+ul > li > a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+
+ul > li > a:hover {
+  color: rgb(216, 216, 216);
+}
+
+.section {
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(16, 16, 16);
+}
+
+.banner {
+  padding: 10%;
+}
+
+.banner > h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  z-index: 10;
+  padding-bottom: 20px;
+}
+
+.banner > p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  z-index: 10;
+  padding-bottom: 20px;
+}
+
+.banner > button {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  z-index: 10;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.banner > button:hover {
+  opacity: 0.5;
+}
+
+.banner > button > svg {
+  margin: 0 10px;
+  font-size: 1.7rem;
+}
+
+.pic{
+  width: 200px;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.pic:hover{
+  transform: translateY(-10px);
+}
+
+.rows{
+  padding: 1rem;
+  background-color: rgb(16, 16, 16);
+}
+
+  .rows > h2 {
+      color: white;
+      font-weight: 400;
+      margin: 0.3rem;
+  }
+
+  .rows > div {
+      display: flex;
+      overflow-x: auto;
+  }
