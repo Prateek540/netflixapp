@@ -29,7 +29,7 @@ const Row = ({ title, arr = [] }) => {
   );
 };
 
-const Home = () => {
+const Movies = () => {
   const [upcomingMovies, setUpcomingMovies] = useState([]);
   const [nowPlayingMovies, setNowPlayingMovies] = useState([]);
   const [popularMovies, setPopularMovies] = useState([]);
@@ -75,8 +75,8 @@ const Home = () => {
       <div
         className="section"
         style={{
-          backgroundImage: popularMovies[0]
-            ? `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${`${imgUrl}/${popularMovies[0].poster_path}`})`
+          backgroundImage: popularMovies[1]
+            ? `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${`${imgUrl}/${popularMovies[1].poster_path}`})`
             : "rgb(16,16,16)",
         }}
       >
@@ -84,8 +84,8 @@ const Home = () => {
           <div className="row">
             <div className="col-12 col-md-6">
               <div className="banner">
-                {popularMovies[0] && <h1>{popularMovies[0].original_title}</h1>}
-                {popularMovies[0] && <p>{popularMovies[0].overview}</p>}
+                {popularMovies[1] && <h1>{popularMovies[1].original_title}</h1>}
+                {popularMovies[1] && <p>{popularMovies[1].overview}</p>}
                 <button type="button" className="btn btn-light">
                   Play <ImPlay3 size={15} />
                 </button>
@@ -107,4 +107,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Movies;

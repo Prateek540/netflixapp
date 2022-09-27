@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
-*{
+* {
   margin: 0%;
   padding: 0%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -19,7 +19,7 @@
   margin: 15px;
 }
 
-.navbar-nav > li{
+.navbar-nav > li {
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -29,7 +29,7 @@
   color: white;
 }
 
-.navbar > svg:hover{
+.navbar > svg:hover {
   color: rgb(216, 216, 216);
 }
 
@@ -77,12 +77,12 @@ ul > li > a:hover {
   outline: none;
   border: none;
   z-index: 10;
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 1.2rem;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.14s;
 }
 
 .banner > button:hover {
@@ -94,29 +94,29 @@ ul > li > a:hover {
   font-size: 1.7rem;
 }
 
-.pic{
+.pic {
   width: 200px;
   margin: 0.3rem;
   cursor: pointer;
-  transition: transform 0.5s;
+  transition: transform 0.14s;
 }
 
-.pic:hover{
+.pic:hover {
   transform: translateY(-10px);
 }
 
-.rows{
+.rows {
   padding: 1rem;
   background-color: rgb(16, 16, 16);
 }
 
-  .rows > h2 {
-      color: white;
-      font-weight: 400;
-      margin: 0.3rem;
-  }
+.rows > h2 {
+  color: white;
+  font-weight: 400;
+  margin: 0.3rem;
+}
 
-  .rows > div {
-      display: flex;
-      overflow-x: auto;
-  }
+.rows > div {
+  display: flex;
+  overflow-x: auto;
+}

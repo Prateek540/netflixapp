@@ -29,7 +29,7 @@ const Row = ({ title, arr = [] }) => {
   );
 };
 
-const Home = () => {
+const Trending = () => {
   const [upcomingMovies, setUpcomingMovies] = useState([]);
   const [nowPlayingMovies, setNowPlayingMovies] = useState([]);
   const [popularMovies, setPopularMovies] = useState([]);
@@ -75,8 +75,8 @@ const Home = () => {
       <div
         className="section"
         style={{
-          backgroundImage: popularMovies[0]
-            ? `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${`${imgUrl}/${popularMovies[0].poster_path}`})`
+          backgroundImage: popularMovies[3]
+            ? `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${`${imgUrl}/${popularMovies[3].poster_path}`})`
             : "rgb(16,16,16)",
         }}
       >
@@ -84,8 +84,8 @@ const Home = () => {
           <div className="row">
             <div className="col-12 col-md-6">
               <div className="banner">
-                {popularMovies[0] && <h1>{popularMovies[0].original_title}</h1>}
-                {popularMovies[0] && <p>{popularMovies[0].overview}</p>}
+                {popularMovies[3] && <h1>{popularMovies[3].original_title}</h1>}
+                {popularMovies[3] && <p>{popularMovies[3].overview}</p>}
                 <button type="button" className="btn btn-light">
                   Play <ImPlay3 size={15} />
                 </button>
@@ -99,7 +99,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Row title="Upcoming movies" arr={upcomingMovies} />
+      <Row title="Upcoming trending" arr={upcomingMovies} />
       <Row title="Now Playing" arr={nowPlayingMovies} />
       <Row title="Popular" arr={popularMovies} />
       <Row title="Top Rated" arr={topRatedMovies} />
@@ -107,4 +107,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Trending;
